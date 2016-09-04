@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+$pad: 2%;
+
+.grid {
+	margin: 0 0 $pad 0;
+	@include clearfix();
+}
+
+[class*='span_'] {
+	float: left;
+	margin-right: $pad;
+	.grid &:last-of-type {
+		margin-right: 0;
+	}
+}
+
+/*  GRID OF EIGHT  */
+.span_8_of_8 {
+  width: 100%;
+}
+
+.span_7_of_8 {
+    width: 87.25%;
+}
+
+.span_6_of_8 {
+    width: 74.5%;
+}
+
+.span_5_of_8 {
+    width: 61.75%;
+}
+
+.span_4_of_8 {
+    width: 49%;
+}
+
+.span_3_of_8 {
+    width: 36.25%;
+}
+
+.span_2_of_8 {
+    width: 23.5%;
+}
+
+.span_1_of_8 {
+    width: 10.75%;
+}
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+    width: 91.5%;
+}
+.span_10_of_12 {
+    width: 83%;
+}
+
+.span_9_of_12 {
+    width: 74.5%;
+}
+
+.span_8_of_12 {
+    width: 66%;
+}
+
+.span_7_of_12 {
+    width: 57.5%;
+}
+
+.span_6_of_12 {
+    width: 49%;
+}
+
+.span_5_of_12 {
+    width: 40.5%;
+}
+
+.span_4_of_12 {
+    width: 32%;
+}
+
+.span_3_of_12 {
+    width: 23.5%;
+}
+
+.span_2_of_12 {
+    width: 15%;
+}
+
+.span_1_of_12 {
+    width: 6.5%;
+}
+
+.module {
+	margin: $pad;
+}
+
+/* Opt-in outside padding */
+.grid-pad {
+	margin: $pad 0 $pad $pad;
+	[class*='span_']:last-of-type {
+		margin-right: $pad;
+	}
+}

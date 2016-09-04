@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+body {
+	background-color: $body-background-color;
+}
+
+.container {
+	max-width: $containerWidth;
+	margin: 0 auto;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
